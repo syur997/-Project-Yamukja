@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 야먹자 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-image: url("https://ifh.cc/g/mwDslm.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #aaa {
+            font-family: 'Nanum Gothic', sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        #bbb {
+            font-family: 'Nanum Gothic', sans-serif;
+            color: #2b1901;
+            text-align: center;
+        }
+
+        #search_form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1 id="aaa"> 어디서 식사하시나요? </h1>
+        <br>
+
+    </header>
+    <form id="search_form" action="/input">
+        <input type="search" placeholder="지역을 입력해주세요" id="menu_input" name="q">
+        <button style="background-color: rgb(255, 255, 255); border-color: azure;" type="submit"
+            class="btn btn-info">출발!</button>
+    </form>
+    <main>
+        {% if map %}
+        <center>
+            <iframe srcdoc="{{ map }}" height="800" width="1200"></iframe>
+        </center>
+        {% else %}
+        <center>
+            <br>
+            <br>
+            <h3 id="bbb"> </h3>
+        </center>
+        {% endif %}
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
