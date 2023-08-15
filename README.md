@@ -28,7 +28,7 @@
 </p>
 <br>
 <br>
-<h2 align="left"> 사용 방법 </h2>
+<h2 align="left"> 프로젝트 소개 </h2>
 <h3 align='left'> 1. 원하는 지역명 검색 </h3>
 '영등포' 입력 → '출발' 버튼 클릭<br>
 <img src="https://github.com/syur997/Project_Yamukja/assets/110324563/395cfb9f-c69f-4b3d-a593-d8b511178324.png" width="400" height="150"/>
