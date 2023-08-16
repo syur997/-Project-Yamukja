@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=Waving&color=61380B&height=200&text=Project&fontColor=FFFFFF)
+![header](https://capsule-render.vercel.app/api?type=Waving&color=9F81F7&height=200&text=Project&fontColor=FFFFFF)
 
 <h1 align="center"> 🍴 먹기 싫은 음식을 제외하고 추천하는 맛집 지도 🍴 </h1>
 <div align='right'>
